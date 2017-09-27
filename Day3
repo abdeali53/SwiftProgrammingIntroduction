@@ -1,0 +1,98 @@
+//: Playground - noun: a place where people can play
+
+import UIKit
+
+var str = "Hello, playground"
+var a = 5, b=2
+//var c = 5 + b / a -= 1 + (a+=1)
+//a += 1
+
+var x = (10,20,30)
+
+print(x.0)
+print(x.1)
+print(x.2)
+
+x.0 = x.1
+
+print(x.0)
+print(x.1)
+print(x.2)
+
+var y = ("asas","asasas")
+print(y.0)
+
+
+var z = (x.0,x.1)
+print(x.1)
+
+var (a1,a2) = z
+print(a1)
+print(a2)
+print("\n")
+
+var (b1,b2) = (x.0 ,x.1)
+
+var (c1,_,c2) = x
+print(c1)
+print(c2)
+print("\n")
+
+var array1 = [10,20,20,40,50]
+print(array1[0])
+
+
+var array2 = [Int]();
+array2.append(100)
+array2[0]=1000
+print(array2[0])
+
+var array3 = [Any]();
+array3.append(100)
+array3.append("asasas")
+array3[0]=1000
+print(array3[1])
+print("\n")
+
+var array4 = array1[1...2]
+print(array4[1])
+array4[1]=12121
+print(array1[1])
+print(array4[1])
+for t in array4{
+    print(t)
+}
+
+// Declaring Set in swift
+var favouriteGeneres : Set<String> = ["Rock", "Classical","Hip hop","Rock"]
+
+print(favouriteGeneres)
+
+var set1 = Set(array1)
+print(set1)
+
+var array5 = Array(set1)
+print(array5)
+
+
+var d1 : Dictionary<String, String> = ["India":"Hindi","Canada":"English"]
+print(d1)
+print(d1.description)
+d1["China"] = "Mandarin"
+for (k,v) in d1{
+    print("\(k) -> \(v)")
+}
+
+var d3 = Dictionary<String, AnyObject>()
+d3["firstName"] = "sas" as AnyObject
+print(d3)
+
+for obj in  d3{
+print(obj.key)
+}
+
+var keylst = Array(d3.keys)
+for v in keylst{
+    print(v)
+}
+
