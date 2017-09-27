@@ -2,97 +2,124 @@
 
 import UIKit
 
-var str = "Hello, playground"
-var a = 5, b=2
-//var c = 5 + b / a -= 1 + (a+=1)
-//a += 1
+var address1 = Dictionary<String,String>()
+address1["Street"]="York Mills Road"
+address1["AptNo"]="509"
+address1["City"]="Toronto"
+address1["Zip"]="M3A1X8"
 
-var x = (10,20,30)
+var birthDate1 = Dictionary<String,Int>()
+birthDate1["DD"]=28
+birthDate1["MM"]=01
+birthDate1["YYYY"]=1992
 
-print(x.0)
-print(x.1)
-print(x.2)
-
-x.0 = x.1
-
-print(x.0)
-print(x.1)
-print(x.2)
-
-var y = ("asas","asasas")
-print(y.0)
+var studentName1 = Dictionary<String,String>()
+studentName1["FirstName"]="Abdeali"
+studentName1["LastName"]="Jaorawala"
 
 
-var z = (x.0,x.1)
-print(x.1)
+var address2 = Dictionary<String,String>()
+address2["Street"]="York Mills Road"
+address2["AptNo"]="510"
+address2["City"]="Toronto"
+address2["Zip"]="M3A1X8"
 
-var (a1,a2) = z
-print(a1)
-print(a2)
-print("\n")
+var birthDate2 = Dictionary<String,Int>()
+birthDate2["DD"]=28
+birthDate2["MM"]=01
+birthDate2["YYYY"]=1989
 
-var (b1,b2) = (x.0 ,x.1)
-
-var (c1,_,c2) = x
-print(c1)
-print(c2)
-print("\n")
-
-var array1 = [10,20,20,40,50]
-print(array1[0])
+var studentName2 = Dictionary<String,String>()
+studentName2["FirstName"]="Denis"
+studentName2["LastName"]="Gois"
 
 
-var array2 = [Int]();
-array2.append(100)
-array2[0]=1000
-print(array2[0])
+var address3 = Dictionary<String,String>()
+address3["Street"]="York Mills Road"
+address3["AptNo"]="511"
+address3["City"]="Toronto"
+address3["Zip"]="M3A1X8"
 
-var array3 = [Any]();
-array3.append(100)
-array3.append("asasas")
-array3[0]=1000
-print(array3[1])
-print("\n")
+var birthDate3 = Dictionary<String,Int>()
+birthDate3["DD"]=28
+birthDate3["MM"]=01
+birthDate3["YYYY"]=1991
 
-var array4 = array1[1...2]
-print(array4[1])
-array4[1]=12121
-print(array1[1])
-print(array4[1])
-for t in array4{
-    print(t)
-}
-
-// Declaring Set in swift
-var favouriteGeneres : Set<String> = ["Rock", "Classical","Hip hop","Rock"]
-
-print(favouriteGeneres)
-
-var set1 = Set(array1)
-print(set1)
-
-var array5 = Array(set1)
-print(array5)
+var studentName3 = Dictionary<String,String>()
+studentName3["FirstName"]="Kriti"
+studentName3["LastName"]="Parghi"
 
 
-var d1 : Dictionary<String, String> = ["India":"Hindi","Canada":"English"]
-print(d1)
-print(d1.description)
-d1["China"] = "Mandarin"
-for (k,v) in d1{
-    print("\(k) -> \(v)")
-}
+var address4 = Dictionary<String,String>()
+address4["Street"]="York Mills Road"
+address4["AptNo"]="509"
+address4["City"]="Toronto"
+address4["Zip"]="M3A1X8"
 
-var d3 = Dictionary<String, AnyObject>()
-d3["firstName"] = "sas" as AnyObject
-print(d3)
+var birthDate4 = Dictionary<String,Int>()
+birthDate4["DD"]=28
+birthDate4["MM"]=01
+birthDate4["YYYY"]=1992
 
-for obj in  d3{
-print(obj.key)
-}
+var studentName4 = Dictionary<String,String>()
+studentName4["FirstName"]="Abdeali"
+studentName4["LastName"]="Jaorawala"
 
-var keylst = Array(d3.keys)
-for v in keylst{
-    print(v)
-}
 
+var address5 = Dictionary<String,String>()
+address5["Street"]="York Mills Road"
+address5["AptNo"]="509"
+address5["City"]="Toronto"
+address5["Zip"]="M3A1X8"
+
+var birthDate5 = Dictionary<String,Int>()
+birthDate5["DD"]=28
+birthDate5["MM"]=01
+birthDate5["YYYY"]=1992
+
+var studentName5 = Dictionary<String,String>()
+studentName5["FirstName"]="Abdeali"
+studentName5["LastName"]="Jaorawala"
+
+
+var students = [AnyObject]()
+
+var student1 = Dictionary<String,AnyObject>()
+student1["SId"] = 1 as AnyObject
+student1["SName"] = studentName1 as AnyObject
+student1["Address"] = address1 as AnyObject
+student1["DOB"] = birthDate1 as AnyObject
+students.append(student1 as AnyObject)
+
+var student2 = Dictionary<String,AnyObject>()
+student2["SId"] = 1 as AnyObject
+student2["SName"] = studentName2 as AnyObject
+student2["Address"] = address2 as AnyObject
+student2["DOB"] = birthDate2 as AnyObject
+students.append(student2 as AnyObject)
+
+var student3 = Dictionary<String,AnyObject>()
+student3["SId"] = 2 as AnyObject
+student3["SName"] = studentName3 as AnyObject
+student3["Address"] = address3 as AnyObject
+student3["DOB"] = birthDate3 as AnyObject
+students.append(student3 as AnyObject)
+
+
+var student4 = Dictionary<String,AnyObject>()
+student4["SId"] = 3 as AnyObject
+student4["SName"] = studentName3 as AnyObject
+student4["Address"] = address3 as AnyObject
+student4["DOB"] = birthDate3 as AnyObject
+students.append(student4 as AnyObject)
+
+var student5 = Dictionary<String,AnyObject>()
+student5["SId"] = 5 as AnyObject
+student5["SName"] = studentName5 as AnyObject
+student5["Address"] = address5 as AnyObject
+student5["DOB"] = birthDate5 as AnyObject
+students.append(student5 as AnyObject)
+
+
+
+print(students)
